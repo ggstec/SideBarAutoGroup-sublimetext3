@@ -36,4 +36,4 @@ One configuration file for each project, the configuration file is an .autoGroup
 
 # Thanks
 
-The original plugin was written by [Janez Troha](https://github.com/ggstec)
+The original plugin was written by [GGSTEC](https://github.com/ggstec)
