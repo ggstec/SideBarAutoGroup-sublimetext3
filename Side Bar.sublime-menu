@@ -1,0 +1,28 @@
+[
+	{
+		"caption": "设置到分组",
+		"id": "side-bar-set-in-group",
+		"children": [
+			{
+				"caption": "分组1",
+				"command": "side_bar_set_in_group1",
+				"args": {"paths": []}
+			},
+			{
+				"caption": "分组2",
+				"command": "side_bar_set_in_group2",
+				"args": {"paths": []}
+			},
+			{
+				"caption": "分组3",
+				"command": "side_bar_set_in_group3",
+				"args": {"paths": []}
+			},
+			{
+				"caption": "分组4",
+				"command": "side_bar_set_in_group4",
+				"args": {"paths": []}
+			}
+		]
+	}
+]
