@@ -1,0 +1,20 @@
+{
+	"schema_version": "1.2",
+	"packages": [
+		{
+			"name": "SideBarAutoGroup for Sublime Text 2/3",
+			"description": "This plugin helps the layout mode to be efficient and practical. Right-click the file or folder in the sidebar and select Set to group, you can bind the folder to the group. Open the file under the folder will automatically open in the group",
+			"author": "Zibo Jiesi Network Technology Co., Ltd.",
+			"homepage": "https://github.com/ggstec/SideBarAutoGroup-sublimetext3",
+			"last_modified": "2021.03.17",
+			"platforms": {
+				"*": [
+					{
+					"version": "1.0.0",
+					"url": "https://nodeload.github.com/ggstec/SideBarAutoGroup-sublimetext3/zip/tag名"
+					}
+				]
+			}
+		}
+	]
+}

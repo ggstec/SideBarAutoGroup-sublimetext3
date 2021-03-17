@@ -12,16 +12,6 @@ if sublime.version() == '' or int(sublime.version()) > 3000:
 def Window(window=None):
     return sublime.active_window()
 
-def plugin_loaded():
-    global settings
-
-    hashes = {}
-    platform = sublime.platform().title()
-
-    if (platform == "Osx"):
-        platform = "OSX"
-    settings = sublime.load_settings('SideBarAutoGroup ('+platform+').sublime-settings')
-
 def group_get(filepath):
     variables=Window().extract_variables()
     folder=variables['folder']
@@ -150,7 +140,3 @@ class SideBarSetInGroup4Command(sublime_plugin.WindowCommand):
             return False
         else:
             return True
-
-
-if st_version == 2:
-    plugin_loaded()

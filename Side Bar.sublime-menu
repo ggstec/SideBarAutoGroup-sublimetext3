@@ -1,25 +1,25 @@
 [
 	{
-		"caption": "设置到分组",
+		"caption": "Set To Group",
 		"id": "side-bar-set-in-group",
 		"children": [
 			{
-				"caption": "分组1",
+				"caption": "Group 1",
 				"command": "side_bar_set_in_group1",
 				"args": {"paths": []}
 			},
 			{
-				"caption": "分组2",
+				"caption": "Group 2",
 				"command": "side_bar_set_in_group2",
 				"args": {"paths": []}
 			},
 			{
-				"caption": "分组3",
+				"caption": "Group 3",
 				"command": "side_bar_set_in_group3",
 				"args": {"paths": []}
 			},
 			{
-				"caption": "分组4",
+				"caption": "Group 4",
 				"command": "side_bar_set_in_group4",
 				"args": {"paths": []}
 			}
