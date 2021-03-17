@@ -1,4 +1,4 @@
-# SideBarAutoGroup for Sublime Text 3
+# SideBarAutoGroup for ST 2/3
 
 A web browser page reloading plugin for the [Sublime Text 3](http://sublimetext.com "Sublime Text 3") editor.
 
