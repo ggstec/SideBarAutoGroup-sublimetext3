@@ -15,21 +15,25 @@ def Window(window=None):
 def group_get(filepath):
     variables=Window().extract_variables()
     folder=variables['folder']
+    filepath=filepath.replace('\\','/')
+
+    folder=folder.replace('\\','/')
 
     filepaths=filepath.split("/")
-    del filepaths[0]
+    
     folders=folder.split("/")
     arr=[]
     for i in range(len(folders),len(filepaths)):
         str1=""
         for k in range(0,i):
-            str1=str1+"/"+filepaths[k]
+            if(str1==""):
+                str1=filepaths[k]
+            else:
+                str1=str1+"/"+filepaths[k]
         arr.append(str1)
 
     arr.reverse()
-
     group=setting_get(filepath)
-
     for item in arr:
         if group=="":
             group=setting_get(item)
@@ -41,6 +45,8 @@ def group_get(filepath):
 def setting_get(path):
     variables=Window().extract_variables()
     folder=variables['folder']
+    folder=folder.replace('\\','/')
+
     config = configparser.ConfigParser()
     config.read(folder+'/.autogroup',encoding="utf-8")
     
@@ -64,6 +70,10 @@ def setting_get(path):
 def setting_save(path,value):
     variables=Window().extract_variables()
     folder=variables['folder']
+
+    path=path.replace('\\','/')
+    folder=folder.replace('\\','/')
+
     config = configparser.ConfigParser()
     config.read(folder+'/.autogroup',encoding="utf-8")
 
